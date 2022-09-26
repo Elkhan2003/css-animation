@@ -1,0 +1,14 @@
+@media(max-width:768px) {
+  .main {
+    background: linear-gradient(to right, #ff01d9, #029ddf, #6702ff);
+    animation: none;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 500px) {
+  .phone {
+    transform: scale(0.8);
+    animation: none;
+  }
+}

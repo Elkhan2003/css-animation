@@ -2,6 +2,7 @@ body {
   font-family: "consolas";
 }
 
+/* ! section 1 */
 .section {
   display: flex;
   justify-content: center;
@@ -94,4 +95,61 @@ body {
 .button:hover .button__line--left {
   bottom: 100%;
   transition-delay: 0s;
+}
+
+/* ! section 2 */
+body {
+  background-color: #151320;
+}
+
+.box {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.box:before {
+  content: "";
+  height: 250%;
+  width: 150%;
+  position: absolute;
+  background: conic-gradient(#fd004c,
+      #fe9000,
+      #fff020,
+      #3edf4b,
+      #3363ff,
+      #b102b7,
+      #fd004c);
+  left: -25%;
+  top: -70%;
+  animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.box:after {
+  content: "NEXT";
+  position: absolute;
+  background-color: #1c1b29;
+  height: 85%;
+  width: 88%;
+  top: 7.5%;
+  left: 6%;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 6px;
+  display: grid;
+  place-items: center;
 }

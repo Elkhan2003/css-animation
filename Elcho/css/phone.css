@@ -27,6 +27,7 @@ body {
 	}
 }
 
+
 /* ! section */
 .section {
 	background: url(../img/pattern.svg) center;
@@ -49,7 +50,6 @@ body {
 
 	width: 400px;
 	height: 845px;
-	/* transform: scale(0.9); */
 	transition: .5s;
 	animation: swip 6s ease-in-out;
 }
@@ -117,6 +117,12 @@ body {
 }
 
 /* ! brand */
+.containerGlitch {
+	width: 100%;
+	max-width: 1175px;
+	height: auto;
+}
+
 .glitch {
 	text-align: center;
 	font-size: 90px;
@@ -129,16 +135,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 0.5rem;
 	text-shadow: 0.05em 0 0 rgba(255, 0, 0, .75), -0.025em -.05em 0 rgba(0, 255, 0, .75), 0.025em .05em 0 rgba(0, 0, 255, .75);
-}
-
-.glitch2Bedore {
-	font-size: 6rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	font-family: 'Open Sans', sans-serif;
-	font-family: 'Roboto', sans-serif;
-	letter-spacing: 0.5rem;
-	color: white;
 }
 
 @keyframes glitch {
@@ -190,12 +186,6 @@ body {
 			-0.025em -0.025em 0 rgba(0, 255, 0, .75),
 			-0.025em -0.05em 0 rgba(0, 0, 255, .75);
 	}
-}
-
-.containerGlitch {
-	width: 100%;
-	max-width: 1175px;
-	height: auto;
 }
 
 /* ! loading */
